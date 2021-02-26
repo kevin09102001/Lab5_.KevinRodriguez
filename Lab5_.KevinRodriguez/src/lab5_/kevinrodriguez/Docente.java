@@ -9,25 +9,25 @@ package lab5_.kevinrodriguez;
  *
  * @author Kevin
  */
-public class Docente extends administrativos{
-    public String Nombre1, apellido1, claseasignado, facultadasignada,trabajadisfacultad,areaconocimiento,laboratorio;
-    public int numregistro1;
+public class Docente{
+    public String Nombre, apellido, claseasignado, facultadasignada,trabajadisfacultad,areaconocimiento,laboratorio;
+    public int numregistro;
 
     public Docente() {
     }
 
-    public Docente(String Nombre1, String apellido1, String claseasignado, String facultadasignada, String trabajadisfacultad, String areaconocimiento, String laboratorio, int numregistro1, String Nombre, String apellido, String cargo, String áreaAsignada, String nombreasistente, String nomjefeasignado, int numregistro, int cansubordinados) {
-        super(Nombre, apellido, cargo, áreaAsignada, nombreasistente, nomjefeasignado, numregistro, cansubordinados);
-        this.Nombre1 = Nombre1;
-        this.apellido1 = apellido1;
+    public Docente(String Nombre, String apellido, String claseasignado, String facultadasignada, String trabajadisfacultad, String areaconocimiento, String laboratorio, int numregistro) {
+        this.Nombre = Nombre;
+        this.apellido = apellido;
         this.claseasignado = claseasignado;
         this.facultadasignada = facultadasignada;
         this.trabajadisfacultad = trabajadisfacultad;
         this.areaconocimiento = areaconocimiento;
         this.laboratorio = laboratorio;
-        this.numregistro1 = numregistro1;
+        this.numregistro = numregistro;
     }
 
+   
     public String getNombre() {
         return Nombre;
     }
@@ -91,5 +91,11 @@ public class Docente extends administrativos{
     public void setNumregistro(int numregistro) {
         this.numregistro = numregistro;
     }
+
+    @Override
+    public String toString() {
+        return  Nombre ;
+    }
+    
     
 }

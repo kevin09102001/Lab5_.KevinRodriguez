@@ -90,5 +90,11 @@ public class administrativos {
     public void setCansubordinados(int cansubordinados) {
         this.cansubordinados = cansubordinados;
     }
+
+    @Override
+    public String toString() {
+        return Nombre ;
+    }
+    
     
 }
