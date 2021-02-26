@@ -12,6 +12,11 @@ package lab5_.kevinrodriguez;
 public class tutores extends Estudiante{
       private String tutorlab, tutorclase;
 
+    public tutores(String tutorlab, String tutorclase) {
+        this.tutorlab = tutorlab;
+        this.tutorclase = tutorclase;
+    }
+
     public tutores(String tutorlab, String tutorclase, String Nombre, String apellido, String carrestudia, String equipo, String facultadadpertenece, String cantClases, String beca, String automivil, int numregistro) {
         super(Nombre, apellido, carrestudia, equipo, facultadadpertenece, cantClases, beca, automivil, numregistro);
         this.tutorlab = tutorlab;
