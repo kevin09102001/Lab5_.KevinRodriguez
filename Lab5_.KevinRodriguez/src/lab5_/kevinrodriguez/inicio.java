@@ -131,6 +131,10 @@ public class inicio extends javax.swing.JFrame {
         nombre3 = new javax.swing.JTextField();
         numerore = new javax.swing.JFormattedTextField();
         jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        clases = new javax.swing.JComboBox<>();
+        jLabel42 = new javax.swing.JLabel();
+        lab = new javax.swing.JComboBox<>();
         Consejoacademico = new javax.swing.JDialog();
         CEO = new javax.swing.JDialog();
         poadministra = new javax.swing.JPopupMenu();
@@ -634,6 +638,14 @@ public class inicio extends javax.swing.JFrame {
 
         jLabel40.setText("Numero de registro");
 
+        jLabel41.setText("Da clases");
+
+        clases.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "si", "no" }));
+
+        jLabel42.setText("Da lab");
+
+        lab.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "si", "no" }));
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -710,7 +722,17 @@ public class inicio extends javax.swing.JFrame {
                                 .addComponent(jLabel33)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(apellido3, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(431, Short.MAX_VALUE))
+                .addGap(90, 90, 90)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel41)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(clases, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel42)
+                        .addGap(18, 18, 18)
+                        .addComponent(lab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(339, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -722,13 +744,17 @@ public class inicio extends javax.swing.JFrame {
                             .addComponent(jLabel25)
                             .addComponent(nombre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel32)
-                            .addComponent(nombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(nombre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel41)
+                            .addComponent(clases, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addComponent(jLabel26))
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(apellido2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel33)
-                        .addComponent(apellido3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(apellido3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel42)
+                        .addComponent(lab, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(29, 29, 29)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
@@ -774,7 +800,7 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(numerore, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel40))
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addContainerGap(334, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout PersonaldeplantaLayout = new javax.swing.GroupLayout(Personaldeplanta.getContentPane());
@@ -1181,6 +1207,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JTextField carrera2;
     private javax.swing.JTextField clase2;
     private javax.swing.JTextField claseasignada;
+    private javax.swing.JComboBox<String> clases;
     private javax.swing.JTextField contra;
     private javax.swing.JTextField contra1;
     private javax.swing.JButton crear;
@@ -1228,6 +1255,8 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1247,6 +1276,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JComboBox<String> lab;
     private javax.swing.JList<String> listaadministrativos;
     private javax.swing.JList<String> listadocentes;
     private javax.swing.JDialog login;
