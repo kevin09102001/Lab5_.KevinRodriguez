@@ -81,5 +81,10 @@ public class PersonaDePlanta {
     public void setNumregistro(int numregistro) {
         this.numregistro = numregistro;
     }
+
+    @Override
+    public String toString() {
+        return Nombre ;
+    }
     
 }

@@ -99,5 +99,10 @@ public class Estudiante {
     public void setNumregistro(int numregistro) {
         this.numregistro = numregistro;
     }
+
+    @Override
+    public String toString() {
+        return Nombre ;
+    }
     
 }

@@ -29,6 +29,7 @@ public class PersonalConsejoacademico {
         this.numpersonascargo = numpersonascargo;
     }
 
+
     public String getNombre() {
         return nombre;
     }
@@ -107,6 +108,11 @@ public class PersonalConsejoacademico {
 
     public void setNumpersonascargo(int numpersonascargo) {
         this.numpersonascargo = numpersonascargo;
+    }
+
+    @Override
+    public String toString() {
+        return nombre ;
     }
     
 }
