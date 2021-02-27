@@ -206,6 +206,7 @@ public class inicio extends javax.swing.JFrame {
         contra = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel56 = new javax.swing.JLabel();
 
         jLabel4.setText("Crear usuario");
 
@@ -511,7 +512,10 @@ public class inicio extends javax.swing.JFrame {
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                             .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(apellido)
-                                                .addComponent(cargo1)))))
+                                                .addComponent(cargo1))))
+                                    .addGroup(cargoLayout.createSequentialGroup()
+                                        .addComponent(jButton3)
+                                        .addGap(39, 39, 39)))
                                 .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(cargoLayout.createSequentialGroup()
                                         .addGap(190, 190, 190)
@@ -577,9 +581,12 @@ public class inicio extends javax.swing.JFrame {
                                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                         .addComponent(apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cargoLayout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(57, 57, 57)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton4)
+                                    .addGroup(cargoLayout.createSequentialGroup()
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(57, 57, 57)
+                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(47, 47, 47)
                                 .addComponent(pasar)
                                 .addGap(53, 53, 53)
@@ -587,10 +594,6 @@ public class inicio extends javax.swing.JFrame {
                                 .addGap(46, 46, 46)))
                         .addContainerGap(80, Short.MAX_VALUE))
                     .addGroup(cargoLayout.createSequentialGroup()
-                        .addComponent(jButton3)
-                        .addGap(59, 59, 59)
-                        .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton10)
                         .addGap(25, 25, 25))))
         );
@@ -662,16 +665,16 @@ public class inicio extends javax.swing.JFrame {
                 .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(cargoLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton3)
-                            .addComponent(jButton4)
-                            .addComponent(jButton10))
+                        .addComponent(jButton10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(pasar)
                         .addGap(131, 131, 131))
                     .addGroup(cargoLayout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addComponent(jButton5)
+                        .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton5)
+                            .addComponent(jButton3)
+                            .addComponent(jButton4))
                         .addGap(30, 30, 30)
                         .addGroup(cargoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jScrollPane2)
@@ -1369,6 +1372,8 @@ public class inicio extends javax.swing.JFrame {
             }
         });
 
+        jLabel56.setText("solo crea un usuario en sign in y luego lo pones y cheque");
+
         javax.swing.GroupLayout usuariosLayout = new javax.swing.GroupLayout(usuarios);
         usuarios.setLayout(usuariosLayout);
         usuariosLayout.setHorizontalGroup(
@@ -1395,11 +1400,17 @@ public class inicio extends javax.swing.JFrame {
                                 .addGap(160, 160, 160)
                                 .addComponent(jButton2)))))
                 .addContainerGap(235, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, usuariosLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel56)
+                .addGap(64, 64, 64))
         );
         usuariosLayout.setVerticalGroup(
             usuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(usuariosLayout.createSequentialGroup()
-                .addGap(99, 99, 99)
+                .addGap(44, 44, 44)
+                .addComponent(jLabel56)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel1)
                 .addGap(48, 48, 48)
                 .addGroup(usuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2032,6 +2043,7 @@ public class inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

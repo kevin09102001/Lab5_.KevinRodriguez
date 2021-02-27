@@ -41,7 +41,7 @@ public class tutores extends Estudiante{
 
     @Override
     public String toString() {
-        return Nombre;
+        return tutorlab;
     }
       
 }
